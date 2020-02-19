@@ -6,7 +6,7 @@ pipeline
 		   stage ('scm checkout')
 		     {
 			   steps {
-						git branch: 'master', url: 'https://github.com/Sopi-Github/mynewpipeline.git'
+						git branch: 'master', url: 'https://github.com/Sopi-Github/Ant-WebProject.git'
 				     }
 			  }
 		   stage ('build')
