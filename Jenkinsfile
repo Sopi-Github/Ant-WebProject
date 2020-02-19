@@ -13,7 +13,7 @@ pipeline
 		   {
 		       steps {
 			        withAnt(installation: 'localant', jdk: 'localjdk-1.8') {
-                    sh 'ant build'
+                    sh 'ant compile'
 				}			   
 			   }
 		   }
