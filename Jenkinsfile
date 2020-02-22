@@ -17,5 +17,13 @@ pipeline
 				}			   
 			   }
 		   }
+		    stage ('compile')
+		     {
+			     steps {
+				     withAnt(installation: 'loaclant', jdk: 'localjdk-1.8') {
+					     sh 'ant compile'
+				     }
+			     }   
+		     }
 		 }
     }
