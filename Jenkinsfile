@@ -9,11 +9,11 @@ pipeline
 						git branch: 'master', url: 'https://github.com/Sopi-Github/Ant-WebProject.git'
 				     }
 			  }
-		   stage ('build')
+		   stage ('prepare')
 		   {
 		       steps {
 			        withAnt(installation: 'localant', jdk: 'localjdk-1.8') {
-                    sh 'ant compile'
+                    sh 'ant prepare'
 				}			   
 			   }
 		   }
